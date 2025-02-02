@@ -1,4 +1,6 @@
-Flask
-gunicorn
-opencv-python
-picamera2
+Flask==3.1.0
+gunicorn==23.0.0
+opencv-python==4.11.0.86
+
+# Only install picamera2 on Linux (e.g., when deploying)
+picamera2; sys_platform == "linux"
